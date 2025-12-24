@@ -1,0 +1,107 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+/* FULLSCREEN WRAPPER */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN PANEL */
+.panel {
+    width: 620px;
+    height: 360px;
+    background: linear-gradient(180deg, #0b1220 0%, #070c16 100%);
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 160px;
+    background: linear-gradient(180deg, #0f1a30, #0a1325);
+    padding: 16px;
+}
+
+.sidebar h1 {
+    font-size: 14px;
+    color: #9fb6ff;
+    margin-bottom: 18px;
+}
+
+/* SIDEBAR TABS */
+.tab {
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    color: #bfcaff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.tab:hover {
+    background: #1a2a55;
+}
+
+.tab.active {
+    background: #1a2a55;
+    box-shadow: inset 0 0 0 1px #3c5cff;
+}
+
+/* CONTENT AREA */
+.content {
+    flex: 1;
+    padding: 28px;
+}
+
+/* TITLES */
+.title {
+    font-size: 16px;
+    color: #dfe7ff;
+    margin-bottom: 18px;
+}
+
+/* INPUTS */
+.input {
+    width: 100%;
+    background: #0d162b;
+    border: 1px solid #1f2f5f;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.input::placeholder {
+    color: #7f8fcf;
+}
+
+/* BUTTON */
+.button {
+    width: 120px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: background 0.15s;
+}
+
+.button:hover {
+    background: #e4e8ff;
+}
